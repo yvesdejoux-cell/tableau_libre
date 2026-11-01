@@ -1,0 +1,47 @@
+{
+  "name": "tableau-libre",
+  "private": true,
+  "version": "0.1.0",
+  "license": "GPL-3.0-only",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "tauri": "tauri",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@dnd-kit/core": "^6.3.1",
+    "@dnd-kit/sortable": "^10.0.0",
+    "@dnd-kit/utilities": "^3.2.2",
+    "@ffmpeg/core": "^0.12.10",
+    "@ffmpeg/ffmpeg": "^0.12.15",
+    "@tailwindcss/vite": "^4.3.3",
+    "@tauri-apps/api": "^2",
+    "@tauri-apps/plugin-dialog": "^2.8.4",
+    "@tauri-apps/plugin-fs": "^2.7.1",
+    "@tauri-apps/plugin-opener": "^2",
+    "fflate": "^0.8.3",
+    "konva": "^10.9.0",
+    "lucide-react": "^1.66.0",
+    "nanoid": "^6.0.2",
+    "pdf-lib": "^1.17.1",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-konva": "^19.3.2",
+    "tailwindcss": "^4.3.3",
+    "zustand": "^5.0.16"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2",
+    "@types/jsdom": "^30.0.0",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@vitejs/plugin-react": "^6.0.2",
+    "jsdom": "^30.1.3",
+    "typescript": "~6.0.3",
+    "vite": "^8.0.16",
+    "vitest": "^5.0.5"
+  }
+}

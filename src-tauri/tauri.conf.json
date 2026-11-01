@@ -1,0 +1,58 @@
+{
+  "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
+  "productName": "Tableau Libre",
+  "version": "../package.json",
+  "identifier": "org.tableaulibre.desktop",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "Tableau Libre",
+        "width": 1280,
+        "height": 800,
+        "minWidth": 800,
+        "minHeight": 500,
+        "maximized": true,
+        "dragDropEnabled": false
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; img-src 'self' data: blob:; media-src 'self' blob: https: http: asset:; frame-src https://www.youtube-nocookie.com https://player.vimeo.com https://geo.dailymotion.com; style-src 'self' 'unsafe-inline'; script-src 'self' 'wasm-unsafe-eval'; worker-src 'self' blob:; connect-src 'self' ipc: http://ipc.localhost asset: http://asset.localhost",
+      "devCsp": null,
+      "assetProtocol": { "enable": true, "scope": [] }
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["nsis"],
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "category": "Education",
+    "shortDescription": "Tableau blanc interactif pour la classe",
+    "longDescription": "Tableau blanc interactif libre : stylo, formes, pages, règle, équerre, rapporteur, compas, rideau.",
+    "fileAssociations": [
+      {
+        "ext": ["iwb"],
+        "name": "Session Tableau Libre",
+        "description": "Session de tableau blanc",
+        "role": "Editor",
+        "mimeType": "application/x-tableau-libre"
+      }
+    ],
+    "windows": {
+      "webviewInstallMode": { "type": "embedBootstrapper" },
+      "nsis": { "languages": ["French"] },
+      "wix": { "language": "fr-FR" }
+    }
+  }
+}
