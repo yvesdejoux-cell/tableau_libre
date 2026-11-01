@@ -9,7 +9,7 @@ Tableau blanc interactif libre pour la classe : stylo, formes, texte, pages, rè
 
 L'installeur n'est pas signé. Si Windows affiche « Windows a protégé votre ordinateur », cliquer sur « Informations complémentaires », puis « Exécuter quand même ».
 
-Le numéro de version est affiché dans la barre de titre et en haut, au milieu de la fenêtre.
+Le numéro de version est affiché dans la barre de titre.
 
 ## Développement
 
